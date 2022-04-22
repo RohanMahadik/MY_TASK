@@ -1,0 +1,21 @@
+@mixin textmenu {
+    font-family: 'Lato';
+    color: $menu;
+    font-size: 0.875rem;
+}
+
+@mixin lotoregular {
+    color: $whitebg;
+    font-family: 'Lato';
+}
+
+@mixin slider {
+    background-color: $bgcolor;
+    color: $whitebg;
+    font-family: 'Lato-Black';
+}
+
+@mixin headingtext {
+    font-family: 'Lato-Black';
+    color: $menu
+}

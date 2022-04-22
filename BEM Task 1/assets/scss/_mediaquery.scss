@@ -1,0 +1,523 @@
+    @include breakpoint('large-desktop-max') {}
+    
+    @include breakpoint('medium-large-desktop-max') {}
+    
+    @include breakpoint('medium-large-desktop-maxwidth') {
+        .vidhirriheader {
+            padding: 0 0 0 10px;
+            &__aboutus {
+                &--searchfield {
+                    right: 5px;
+                }
+            }
+        }
+        .irrgationslider {
+            &__heading {
+                font-size: 35px;
+                margin-bottom: 5px;
+            }
+            &__headingagri {
+                position: absolute;
+                bottom: 28%;
+                left: 8%;
+                font-size: 30px;
+            }
+            &__knowmore {
+                font-size: 17px;
+            }
+            &__indicator {
+                width: 50px;
+                height: 50px;
+                bottom: -19px;
+            }
+        }
+        footer {
+            .footerwrapper {
+                &__followus {
+                    display: flex;
+                    // flex-direction: column;
+                    ul {
+                        // margin: 10px 0 0 0;
+                        li {
+                            text-align: center !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint('medium-large-desktop-min') {}
+    
+    @include breakpoint('large-desktop-min') {}
+    
+    @include breakpoint('desktop-max') {
+        .vidhirriheader {
+            &__aboutus {
+                li {
+                    margin-right: 18px;
+                }
+            }
+            &__aboutus {
+                &--searchfield {
+                    right: 7px;
+                }
+            }
+        }
+        .irrgationslider {
+            &__heading {
+                font-size: 31px;
+            }
+            &__headingagri {
+                left: 8%;
+                font-size: 25px;
+            }
+            &__knowmore {
+                font-size: 15px;
+            }
+        }
+        .irrgationheading {
+            &__headingcontainer {
+                font-size: 25px;
+            }
+        }
+        .irrigationabout {
+            &__container {
+                display: block;
+            }
+            &__bgwhite {
+                width: 100%;
+                height: 230px;
+            }
+            &__bgbrown {
+                width: 100%;
+                height: 500px;
+            }
+            &__containt {
+                margin-left: 0%;
+                margin-top: 10%;
+                width: 70%;
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            &__videocontainer {
+                top: 11%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                &--videoimg {
+                    width: unset;
+                    height: 300px;
+                }
+            }
+        }
+        footer {
+            padding: 50px 50px 39px 50px;
+            .footerwrapper {
+                &__inputfield {
+                    button {
+                        padding: 10px 10px;
+                    }
+                }
+                &__menucontainer {
+                    div {
+                        &:not(:first-child) {
+                            margin-left: 50px;
+                        }
+                    }
+                }
+                &__infobottom {
+                    display: flex;
+                    &--left {
+                        text-align: end;
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint('desktop-min') {}
+    
+    @include breakpoint('ipad-max') {
+        .vidhirriheader {
+            &__aboutus {
+                font-size: 12px;
+                justify-content: end;
+                &--accessibility {
+                    margin-top: 5px;
+                }
+            }
+            &__topnav {
+                flex-direction: column;
+            }
+            &__bottomnav {
+                display: flex;
+                align-items: flex-end;
+                padding-right: 20px;
+                &--mainnav {
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: end;
+                    display: none !important;
+                    li {
+                        margin-right: 0;
+                        padding: 10px 0 10px 0;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+                &--menubtn {
+                    &:checked~.vidhirriheader__bottomnav--mainnav {
+                        height: 240px !important;
+                        display: block !important;
+                    }
+                }
+                &--menuicon {
+                    cursor: pointer;
+                    display: inline-block;
+                    padding: 15px 5px;
+                    position: relative;
+                    user-select: none;
+                    text-align: left;
+                }
+            }
+            &__logo {
+                padding: 5px 0px;
+            }
+            &__aboutus {
+                &--searchfield {
+                    right: 3px;
+                    top: 12%;
+                }
+            }
+        }
+        .irrgationslider {
+            &__heading {
+                font-size: 38px;
+            }
+            &__headingagri {
+                font-size: 20px;
+            }
+            &__knowmore {
+                font-size: 12px;
+            }
+        }
+        .irrgationheading {
+            &__headingcontainer {
+                font-size: 20px;
+            }
+        }
+        footer {
+            .footerwrapper {
+                &__address {
+                    flex-direction: column;
+                    align-items: center;
+                    div {
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                    &--topspacing {
+                        margin-top: 20px;
+                    }
+                }
+                &__infobottom {
+                    display: flex;
+                    flex-direction: column;
+                    &--left {
+                        text-align: end;
+                    }
+                }
+                &__followus {
+                    margin-top: 20px;
+                }
+                &__contact {
+                    margin: 64px 0px 0 30px;
+                    padding: 32px 10px 32px 10px;
+                }
+                &__followus {
+                    align-items: center;
+                    flex-direction: column;
+                    h3 {
+                        &::after {
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background: $afterwhite;
+                            left: -12px;
+                            position: absolute;
+                        }
+                    }
+                    ul {
+                        margin: 10px 0 0 0;
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint('ipad-min') {}
+    
+    @include breakpoint('mobile-max') {
+        // .vidhirriheader {
+        //     flex-direction: column;
+        //     &__topnav {
+        //         padding: 5px 0 0 0;
+        //     }
+        //     &__aboutus {
+        //         justify-content: unset;
+        //     }
+        //     &__bottomnav {
+        //         align-items: flex-start;
+        //         &--mainnav {
+        //             text-align: left;
+        //         }
+        //     }
+        // }
+        .irrgationslider {
+            &__heading {
+                font-size: 25px;
+                bottom: 45%;
+            }
+            &__headingagri {
+                font-size: 16px;
+                bottom: 31%;
+            }
+            &__indicator {
+                width: 40px;
+                height: 40px;
+                bottom: -15px;
+            }
+        }
+        .irrgationheading {
+            margin: 40px 0 0px 0;
+            flex-direction: column;
+            &__headingcontainer {
+                font-size: 16px;
+                &--left {
+                    text-align: center;
+                }
+            }
+        }
+        .irrigationinfo {
+            padding: 50px 50px;
+            &__container {
+                flex-wrap: wrap;
+                div {
+                    margin: 10px;
+                }
+            }
+        }
+        .irrigationabout {
+            &__videocontainer {
+                top: 17%;
+                &--videoimg {
+                    width: unset;
+                    height: 200px;
+                }
+            }
+        }
+        footer {
+            .footerwrapper {
+                display: flex;
+                flex-direction: column;
+                &__menu {
+                    width: 100%;
+                }
+                &__menucontainer {
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    div {
+                        &:not(:first-child) {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                &__contact {
+                    margin: 10px 0px 0 0px;
+                }
+                &__subcription {
+                    margin-top: 150px;
+                }
+                &__followus {
+                    align-items: center;
+                }
+                &__infobottom {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+    @include breakpoint('mobile-min') {}
+    
+    @include breakpoint('portrait-mobile-max') {
+        .vidhirriheader {
+            flex-direction: column;
+            &__topnav {
+                padding: 5px 0 0 0;
+            }
+            &__aboutus {
+                justify-content: unset;
+                &--accessibility {
+                    margin-left: 5px;
+                }
+            }
+            &__bottomnav {
+                align-items: flex-start;
+                &--mainnav {
+                    text-align: left;
+                }
+            }
+            &__aboutus {
+                &--searchfield {
+                    left: 100px;
+                    top: 20%;
+                    width: 200px;
+                    height: 45px;
+                    input {
+                        height: 26px;
+                        margin: 6px;
+                    }
+                }
+            }
+        }
+        .irrgationslider {
+            &__heading {
+                font-size: 20px;
+            }
+            &__headingagri {
+                font-size: 15px;
+            }
+        }
+        .irrgationslider {
+            &__heading {
+                font-size: 20px;
+                bottom: 53%;
+            }
+            &__headingagri {
+                font-size: 12px;
+                bottom: 34%;
+            }
+            &__knowmore {
+                font-size: 10px;
+            }
+        }
+        .irrgationheading {
+            margin: 40px 0 0px 0;
+            flex-direction: column;
+            &__headingcontainer {
+                font-size: 12px;
+            }
+        }
+        .irrigationabout {
+            &__bgwhite {
+                width: 100%;
+                height: 150px;
+            }
+            &__videocontainer {
+                top: 11%;
+                &--videoimg {
+                    width: unset;
+                    height: 150px;
+                }
+            }
+        }
+        footer {
+            .footerwrapper {
+                &__subcription {
+                    margin-top: 190px;
+                }
+                &__inputfield {
+                    width: 100%;
+                    button {
+                        font-size: 12px;
+                        bottom: 6px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint('custom-small-mobile-max') {
+        .irrgationslider {
+            &__heading {
+                font-size: 15px;
+                bottom: 59%;
+            }
+            &__headingagri {
+                font-size: 12px;
+                bottom: 37%;
+            }
+        }
+        .irrgationheading {
+            &__headingcontainer {
+                font-size: 10px;
+            }
+        }
+        footer {
+            .footerwrapper {
+                &__address {
+                    div {
+                        &::after {
+                            content: "";
+                            width: 80%;
+                            left: 27px;
+                        }
+                        p {
+                            width: 210px;
+                            font-size: 12px;
+                        }
+                        h5 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                &__followus {
+                    ul {
+                        li {
+                            width: 45px;
+                            text-align: center;
+                        }
+                    }
+                }
+                &__infobottom {
+                    &--left {
+                        margin-top: 25px;
+                    }
+                }
+                &__menucontainer {
+                    div:not(:first-child) {
+                        margin-top: 20px;
+                    }
+                }
+                &__lastmenu {
+                    margin-top: 0px;
+                }
+                &__subcription {
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+                &__inputfield {
+                    width: 100%;
+                    button {
+                        font-size: 10px;
+                        bottom: 8px;
+                    }
+                }
+            }
+        }
+        .irrigationabout {
+            &__containt {
+                margin-top: 20%;
+            }
+        }
+    }
